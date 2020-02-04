@@ -4,13 +4,12 @@
   <div class="container-lg py-6 p-responsive text-center">
     {% include masthead.html metadata=true %}
 
-    <div {% if site.style == 'dark' %}class="text-white"{% endif %}>
-      {{ content }}
-    </div>
+    {% include about.html %}
+    {% include skills.html %}
+    {% include experiences.html %}
+    {% include projects.html %}
+    {% include articles.html %}
 
-    <div class="my-6">
-      {% include projects.html %}
-    </div>
 
     {% if site.topics %}
       <div class="my-6">
